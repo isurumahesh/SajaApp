@@ -1,6 +1,7 @@
 name: Deploy Saj App
 
 on:
+  push:
   workflow_dispatch:
   
 jobs:
