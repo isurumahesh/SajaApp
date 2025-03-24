@@ -27,9 +27,9 @@ var keyVaultClientId = builder.Configuration.GetSection("KeyVault:ClientId");
 var keyVaultClientSecret = builder.Configuration.GetSection("KeyVault:ClientSecret");
 var keyVaultDirectoryId = builder.Configuration.GetSection("KeyVault:DirectoryId");
 
-var credential = new ClientSecretCredential(keyVaultDirectoryId.Value.ToString(), keyVaultClientId.Value.ToString(), keyVaultClientSecret.Value.ToString());
+//var credential = new ClientSecretCredential(keyVaultDirectoryId.Value.ToString(), keyVaultClientId.Value.ToString(), keyVaultClientSecret.Value.ToString());
 
-var client = new SecretClient(new Uri(keyVaultUrl.Value.ToString()), credential);
+//var client = new SecretClient(new Uri(keyVaultUrl.Value.ToString()), credential);
 
 //var client = new SecretClient(new Uri(keyVaultUrl.Value.ToString()), new DefaultAzureCredential());
 
