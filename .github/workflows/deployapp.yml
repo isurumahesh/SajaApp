@@ -24,7 +24,7 @@ jobs:
       run: dotnet build ./Saj.WebApi/Saj.WebApi.csproj --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test ./Saj.UnitTests/Saj.UnitTests.csproj --configuration Release --no-build
+      run: dotnet test ./Saj.UnitTests/Saj.UnitTests.csproj --no-build
 
     - name: Publish
       run: dotnet publish ./Saj.WebApi/Saj.WebApi.csproj --configuration Release --output ./publish
